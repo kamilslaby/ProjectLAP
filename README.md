@@ -1,45 +1,66 @@
-# lap
+# ProjectLAP
 
-This is a Next.js application generated with
-[Create Fumadocs](https://github.com/fuma-nama/fumadocs).
+## Overview
 
-Run development server:
+Project LAP (Learn Audio Produciton) - An open source hub for everyone in music and audio production. Learn essentials, revisit basics, and share knowledge. Together we create the resource every creator wishes they had from day one.
 
-```bash
-npm run dev
-# or
-pnpm dev
-# or
-yarn dev
-```
+## Getting Started
 
-Open http://localhost:3000 with your browser to see the result.
+This passion project was created by Kamil Slaby to empower sound enthusiasts, aspiring producers, and anyone interested in music and audio production.  
 
-## Explore
+Whether you are just starting out or refining your craft, the goal is to make essential concepts in recording, mixing, live sound, and music production both accessible and practical. Topics are curated and explained the way we wish they had been presented to us when we began our own journey.  
 
-In the project, you can see:
+This is not a static resource. It is a constantly growing hub built by and for the audio community. Visit often, explore new topics, revisit fundamentals, and share your own knowledge or experiences so it keeps improving.  
 
-- `lib/source.ts`: Code for content source adapter, [`loader()`](https://fumadocs.dev/docs/headless/source-api) provides the interface to access your content.
-- `app/layout.config.tsx`: Shared options for layouts, optional but preferred to keep.
+Together we can build a resource that every creator wishes they had from day one. Let’s create something valuable, lasting, and truly helpful for anyone curious about sound creation.  
 
-| Route                     | Description                                            |
-| ------------------------- | ------------------------------------------------------ |
-| `app/(home)`              | The route group for your landing page and other pages. |
-| `app/docs`                | The documentation layout and pages.                    |
-| `app/api/search/route.ts` | The Route Handler for search.                          |
+---
 
-### Fumadocs MDX
+## Support
 
-A `source.config.ts` config file has been included, you can customise different options like frontmatter schema.
+This knowledge base is free and maintained through time and financial contributions of people who want to support fellow audio enthusiasts of all levels.  
 
-Read the [Introduction](https://fumadocs.dev/docs/mdx) for further details.
+If you find this project useful, please consider supporting it by becoming a Patron.  
 
-## Learn More
+---
 
-To learn more about Next.js and Fumadocs, take a look at the following
-resources:
+## Invitation to Contribution
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js
-  features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [Fumadocs](https://fumadocs.vercel.app) - learn about Fumadocs
+You are warmly invited to be a part of this project. Whether you have hands-on experience, unique techniques, tutorials, diagrams, or insights you think others would benefit from, your contributions are valuable.  
+
+Ways you can help:  
+- Write new topic pages  
+- Improve existing explanations  
+- Fix errors or add missing details  
+- Share examples or workflows  
+- Suggest new areas to cover  
+
+Pull requests are welcome. Feedback, ideas for structure, or general suggestions are much appreciated. Let’s build this together as a community.  
+
+---
+
+## How to Contribute
+
+1. Fork this repository  
+2. Create a new branch for your contribution  
+3. Add or edit content  
+4. Commit your changes and push the branch  
+5. Open a pull request  
+
+Please check the [CONTRIBUTING.md](CONTRIBUTING.md) file (coming soon) for detailed guidelines.  
+
+---
+
+## License
+
+This project is licensed under the **MIT License**.  
+You are free to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of this work, provided that attribution is given.  
+
+For full details, see the [LICENSE](LICENSE) file.  
+
+---
+
+## Contact
+
+For questions or suggestions, feel free to reach out:  
+📧 lap@superior-studios.com
