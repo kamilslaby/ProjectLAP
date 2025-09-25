@@ -47,7 +47,7 @@ Pull requests are welcome. Feedback, ideas for structure, or general suggestions
 4. Commit your changes and push the branch  
 5. Open a pull request  
 
-Please check the [CONTRIBUTING.md](CONTRIBUTING.md) file (coming soon) for detailed guidelines.  
+Please check the [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.  
 
 ---
 

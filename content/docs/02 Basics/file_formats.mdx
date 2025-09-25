@@ -1,0 +1,169 @@
+---
+title: File formats
+description: Most popular formats explained
+---
+
+## Common Audio File Formats
+
+Choosing the right audio format is important for sound quality, compatibility, and file size. Different formats serve different purposes, from high fidelity recording to streaming-friendly compression.
+
+<Callout>
+**Quick Tip**
+
+If in doubt use WAV or AIFF and always keep a lossless master file before creating compressed versions for distribution.
+</Callout>
+
+
+### Comparison Table
+
+| Format | Compression | Metadata Support         | Max File Size       | Use Case                                     | Additional Info                                                  |
+|----------------------------|-----------------|--------------------------|----------------------|--------------------------------------------------|-------------------------------------------------------------------------|
+| **WAV / WAV variants**     | Lossless        | Minimal (except BWF)     | ~4 GB (WAV); larger (RF64/Wave64) | Recording, mixing, mastering, archiving          | Universal support; BWF adds timestamps; RF64/Wave64 for >4 GB files     |
+| **AIFF / AIFC**            | Lossless        | Yes (tags, markers)      | Large (unbounded)    | Recording, mac‑based workflows, archiving        | Apple format; AIFC offers compressed variant                            |
+| **CAF**                    | Lossless/lossy  | Yes                      | Virtually unlimited (64‑bit offsets) | Long‑format recording, loops, library use         | Developed by Apple, used in Logic and GarageBand                        |
+| **Raw PCM**                | Uncompressed    | None                     | As large as needed   | Hardware interfacing, scientific use             | Headerless; needs separate metadata like sample rate                    |
+| **MP3 (LAME)**             | Lossy           | ID3 tagging              | Moderate (VBR allows >4 GB) | Distribution, streaming, portable listening     | LAME encoder is high‑quality open‑source; supports VBR                 |
+| **OGG Vorbis**             | Lossy           | Basic (Vorbis tags)      | Moderate             | Open‑source distribution, gaming, streaming      | Better quality vs MP3 at similar bitrates                               |
+| **OGG Opus**               | Lossy           | Basic (Opus tags)        | Moderate             | Voice streaming, low latency, podcasts           | Optimized for both speech and music, low‑latency                       |
+| **FLAC**                   | Lossless        | Extensive (tags, cover art) | Large             | Archiving, high‑quality distribution             | 50‑70 % compression, open‑source, fast seek                            |
+| **ALAC**                   | Lossless        | Yes                      | Large                | Archiving, Apple ecosystems                      | Apple’s open‑source lossless in MP4 container                          |
+| **WMA (lossy/lossless)**   | Lossy & Lossless| Basic tags               | Moderate             | Windows-centered streaming, legacy formats       | Lossless less supported; lossy widely used in Windows                  |
+| **WavPack**                | Lossless/lossy  | Yes                      | Large                | Open‑source archiving, hybrid workflows          | Supports lossless and hybrid with correction file                      |
+| **CD Image (CUE/BIN)**     | Uncompressed    | CUE stores metadata      | CD image size (~700MB) | CD mastering, duplication                      | BIN stores raw CD; CUE describes tracks and gaps                      |
+| **DDP**                    | Lossless        | Extensive (mastering info) | Limited by spec   | Professional CD manufacturing                     | Includes audio, track layout, PQ data, error checking                  |
+
+
+### WAV
+**Type:** Uncompressed, lossless  
+- Stores audio without compression, preserving every detail of the waveform
+- Large file sizes (about 10 MB per minute at CD quality 44.1 kHz, 16-bit stereo)
+- Universally supported across all major DAWs, operating systems, and hardware
+- Ideal for production and mastering because it maintains full quality throughout the workflow  
+
+#### WAV Variants
+- **Broadcast WAV (BWF):** Adds metadata such as timecode, track names, and project notes. Common in film, TV, and radio production.  
+- **RF64:** Extension of WAV that supports files larger than 4 GB, common in long-format broadcast or high sample rate projects.  
+- **Wave64 (Sony):** Similar to RF64, developed by Sony for large file support, often used in high-resolution and multi-track recording.  
+
+### AIFF
+**Type:** Uncompressed, lossless  
+- Developed by Apple, functionally equivalent to WAV in sound quality and size  
+- Often preferred in macOS-based studios and Apple software ecosystems  
+- Supports embedded metadata such as track titles, artist names, copyright information, and markers for navigation within the file  
+- Large file sizes, not ideal for casual sharing  
+
+### CAF (Core Audio Format)
+**Type:** Flexible, can store compressed or uncompressed audio  
+- Developed by Apple to overcome size limits of WAV and AIFF  
+- Supports 64-bit file sizes, making it suitable for extremely long recordings  
+- Stores metadata, markers, and multiple audio streams in a single file  
+
+### Raw PCM Data
+**Type:** Uncompressed, headerless audio data  
+- Contains only raw sample data without headers or metadata  
+- Requires separate knowledge of sample rate, bit depth, and channel layout to interpret  
+- Extremely lightweight but not self-descriptive  
+
+### MP3
+**Type:** Compressed, lossy  
+- Reduces file size by discarding audio data less likely to be noticed by the human ear  
+- Widely supported, easy to share, and ideal for platforms where storage or bandwidth is limited  
+- Not recommended for recording, mixing, or mastering due to permanent quality loss  
+- The quality of the file is being determined by the bitrate expressed in kbps, which is amount of data stores for every second of the recording. Some most common being being 128, 192, 256 and 320. The 320kbps is the best quality one.
+
+#### LAME Encoder
+- **LAME** is the most popular open-source MP3 encoder, known for producing higher quality audio at the same bitrate compared to many other encoders.  
+- Offers variable bitrate (VBR) encoding for better quality-to-size ratio.  
+- Widely used in professional and hobbyist workflows for MP3 creation.  
+
+### OGG 
+
+#### OGG Vorbis
+**Type:** Compressed, lossy  
+- Free and patent-free format  
+- Offers better quality than MP3 at similar bitrates  
+- Used in gaming, open-source software, and some streaming services  
+- Not as universally supported as MP3  
+
+#### OGG Opus
+**Type:** Compressed, lossy  
+- Successor to OGG Vorbis for many uses, optimized for both speech and music  
+- Extremely low latency, ideal for live streaming and conferencing  
+- Supported in major browsers and communication platforms like Discord  
+
+### FLAC
+**Type:** Compressed, lossless  
+- Retains original audio quality while reducing file size by up to 50 percent  
+- Open-source and supported by most high-quality audio players and platforms  
+- Great for music libraries where space matters but quality must be preserved  
+- Not commonly used for active mixing sessions due to decoding overhead  
+
+### ALAC (Apple Lossless Audio Codec)
+**Type:** Compressed, lossless  
+- Developed by Apple, similar to FLAC but optimized for iTunes and Apple devices  
+- Maintains full audio quality with smaller file sizes than uncompressed formats  
+- Fully supported on macOS and iOS, partially supported on other platforms  
+
+### WMA (Windows Media Audio)
+**Type:** Compressed (lossy and lossless versions exist)  
+- Developed by Microsoft  
+- The lossy version competes with MP3 and AAC for efficiency, but has limited support outside Windows ecosystems  
+- The lossless version offers quality comparable to WAV or FLAC, but is less common in professional audio production  
+
+### WavPack (WV)
+**Type:** Compressed, lossless/lossy hybrid  
+- Supports lossless mode and hybrid mode with a lossy core and correction file for perfect restoration  
+- Less supported than FLAC but flexible for special use cases  
+
+### Audio CD Image Formats (CUE / BIN)
+**Type:** Uncompressed disc image with audio track info  
+- BIN stores raw CD data; CUE is a text file describing track order, timing, and metadata  
+- Preserves the exact structure and gaps of an audio CD  
+
+### DDP (Disc Description Protocol)
+**Type:** Professional CD mastering format  
+- Includes audio data, track markers, metadata, and error checking  
+- Ensures the replicated CD matches the master exactly  
+
+---
+
+## Project and Multimedia Formats
+
+### OMF (Open Media Framework)
+**Type:** Project interchange format (not an audio format)  
+**Use Case:** Moving multitrack projects between DAWs  
+**Notes:**  
+- Contains references to audio files along with edit data, track layout, and sometimes effects automation  
+- Allows different DAWs to share projects while preserving timing and edits  
+- Common in film, TV, and collaborative production workflows  
+- Requires careful file management to ensure linked audio files are included  
+
+### Video Containers Used in Audio Post-Production
+
+When working on audio for film, TV, or online video, you will often handle video files to sync and edit sound.
+
+#### QT / MOV
+- Apple QuickTime format, widely used in professional video editing  
+- Supports multiple audio and video tracks, timecode, and high-quality codecs  
+- Common in macOS workflows and film post-production  
+
+#### MP4
+- The most common modern video container  
+- Compatible with almost all devices and platforms  
+- Supports AAC audio for streaming and H.264 or H.265 video  
+
+#### AVI
+- Microsoft video container format  
+- Supports uncompressed or compressed video and audio  
+- Large file sizes when uncompressed, less used today in professional workflows  
+
+#### MKV (Matroska Video)
+- Open-source, highly flexible container  
+- Supports virtually any codec, multiple audio tracks, subtitles, and chapters  
+- Popular for archiving and distribution of high-quality video  
+
+#### WEBM
+- Open-source format optimized for web use  
+- Uses VP8/VP9 or AV1 video codecs and Opus or Vorbis audio  
+- Ideal for HTML5 video streaming with no licensing fees  
+
