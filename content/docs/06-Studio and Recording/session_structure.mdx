@@ -1,0 +1,76 @@
+---
+title: Good Practices for Session Structure
+description: Welcome!
+---
+
+<Callout title="Warning" type="warning">
+  This page is work in progress - some information might be wrong or incomplete.
+</Callout>
+
+
+A well-structured session is the foundation of an efficient workflow and a clean, professional mix. Below are the most important practices, starting from the broadest principles to more specific techniques.
+
+### Track naming
+
+Always give each track a clear and descriptive name. Instead of generic labels like “Audio 1,” name the track “Kick,” “Lead Vocal,” or “Guitar Left.” This saves time, reduces confusion, and makes collaboration much easier.
+
+Coming from an IT background, it is also useful to apply consistent naming conventions. A structured format makes sessions more readable and easier to manage, especially in large projects. For example:
+
+```txt
+drums_kick  
+drums_snare_bottom  
+drums_snare_top  
+drums_snare_reverb_extra  
+guitars_lead_1  
+```
+This style groups related tracks together and ensures you can quickly identify their role in the mix.
+
+### Track organization order
+
+Keep your tracks in a logical order.
+
+### Track grouping
+
+Group related tracks together, such as all drums into a drum bus or all backing vocals into a vocal group. This lets you process them as a whole, control levels with fewer faders, and maintain a cleaner session layout.
+
+----
+
+### Color coding
+
+Use color to visually separate track groups. For example, drums can be red, bass blue, guitars green, and vocals purple. Consistent color schemes speed up navigation and make large sessions much easier to manage. 
+
+Reaper can have auto coloring by track name.
+
+### Markers and arrangement view
+
+Add markers to define sections of your track such as intro, verse, chorus, and bridge. These markers give you a quick overview of the arrangement and let you jump to specific parts of the song instantly.
+
+### Gain staging
+
+Maintain consistent levels across your session. Leave enough headroom on every channel and avoid clipping. Balanced gain staging ensures your mix is clean, controlled, and ready for mastering.
+
+If you are working on an intense project, you can use several limiters in series to maintain control. For example, a kick track might have a clipper to tame sharp peaks. The entire drum group can then run through its own processing with a safety limiter or clipper. Finally, all of this feeds into the mastering limiter on the 2-track bus, also known as the master bus.
+
+### Template usage
+
+Build templates with your most-used routing, groups, and effects. Templates speed up your workflow, reduce repetitive setup tasks, and help you stay consistent across projects.
+
+### Comments and notes
+
+Make use of comments or track notes to keep reminders. Write down ideas for arrangement changes, mix adjustments, or creative directions. This helps you stay organized, especially in longer projects.
+
+Reaper has project notes feature, that stays with the project.
+
+### Backup, archiving and versioning
+
+Set up auto-save to run every few minutes. This prevents data loss in case of crashes or unexpected issues.
+
+In addition, save multiple versions of your session as you work. Versioning protects you from mistakes, lets you compare different mix approaches, and ensures that important work is never lost.
+
+It is also a good practice to print crucial audio parts. Keep both the original track with plugins enabled and a processed render. This way, if a plugin update causes problems, or if you reinstall your system or switch to a new machine, you will still have reliable audio files to continue working with.
+
+### Effects as sends
+
+A clean and organized session makes mixing easier and faster. One important rule is to avoid putting reverbs and creative effects directly on individual tracks. Instead, set them up as aux or return tracks and use them through sends.
+
+This approach keeps your mix flexible, reduces CPU usage, and allows multiple instruments or vocals to share the same space. It also makes it easier to control the overall effect level with a single fader.
